@@ -1,0 +1,60 @@
+*{
+    color: white;
+    margin: 0;
+    font-family: nexa;
+ 
+}
+@font-face {
+    font-family: nexa;
+    src: url(Nexa-ExtraLight.ttf);
+}
+@font-face {
+    font-family: nexa2;
+    src: url(Nexa-Heavy.ttf);
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75) ,#00000096) ,url(wp3228148.webp); 
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}
+.container2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    text-align: end;
+    padding: 20px;
+    padding-top: 50px;
+}
+.container{
+    padding: 20px;
+}
+.search-body{
+    grid-column: 2/3;
+    grid-row: 3/3;
+    align-self:self-end;
+    justify-self: center;
+    padding-bottom: 20px;
+}
+img{
+    height:  200px;
+    width: 200px
+}
+input,button{
+    
+    background: none;
+    border: white solid 1px;
+}
+input{
+    text-align: center;
+    width: 200px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+}
